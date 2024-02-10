@@ -1,0 +1,24 @@
+.header {
+    height: 168px;
+    padding: 16px 24px;
+    background-color: #f0f5ff;
+    margin-bottom: 24px;
+}
+
+.ant-breadcrumb {
+    margin-bottom: 14px;
+}
+.header-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.settings-btn {
+    border: none;
+    background-color: inherit;
+    box-shadow: none;
+    padding: 7px 15px;
+}
+.settings-btn:hover {
+    background-color: inherit;
+}

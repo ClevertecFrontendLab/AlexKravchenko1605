@@ -1,0 +1,32 @@
+.content-style {
+    min-height: calc(100vh - 168px);
+}
+.app-possibilities,
+.app-content-title {
+    max-width: 752px;
+    margin-left: 24px;
+    background-color: #ffffff;
+    padding: 24px;
+
+    p {
+        color: #061178;
+        margin-bottom: 0;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        line-height: 130%;
+    }
+}
+
+.app-possibilities {
+    margin-bottom: 24px;
+}
+.app-content-title {
+    margin-bottom: 16px;
+}
+.app-card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-left: 24px;
+    margin-bottom: 24px;
+}

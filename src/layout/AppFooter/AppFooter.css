@@ -1,0 +1,14 @@
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 24px;
+}
+
+.ant-layout-footer {
+    padding: 0;
+}
+
+.reviews {
+    padding: 9.5px 15px;
+}

@@ -3,3 +3,17 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+#root {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0;
+}
+
+h1.ant-typography,
+h4.ant-typography {
+    margin: 0;
+}

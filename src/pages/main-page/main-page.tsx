@@ -12,69 +12,91 @@ import {
     IdcardOutlined,
 } from '@ant-design/icons';
 
-const { Header, Sider, Content } = Layout;
+import { AppFooter, AppHeaderTitle, AppMainContent } from '../../layout/index';
+
+const { Header, Sider, Content, Footer } = Layout;
 
 export const MainPage: React.FC = () => {
     const [collapsed, setCollapsed] = useState(false);
 
     return (
         <>
-            <Layout>
-                <Sider
-                    trigger={null}
-                    collapsible
-                    collapsed={collapsed}
-                    style={{ backgroundColor: 'grey' }}
-                >
+            <Layout className='background-img'>
+                <Sider trigger={null} collapsible collapsed={collapsed} className='sider-style'>
                     <div className='logo'>
-                        <img src='/images/logo.png' alt='logo' />
+                        <div className='logo-wrapper'>
+                            <img src='/images/logo.png' alt='logo' />
+                        </div>
                     </div>
                     <Menu
                         mode='inline'
                         items={[
                             {
                                 key: '1',
-                                icon: <CalendarOutlined />,
+                                icon: <CalendarOutlined style={{ color: '#061178' }} />,
                                 label: 'Календарь',
+                                style: {
+                                    paddingLeft: '16px',
+                                    paddingRight: '16px',
+                                    marginBottom: '16px',
+                                },
                             },
                             {
                                 key: '2',
-                                icon: <HeartFilled />,
+                                icon: <HeartFilled style={{ color: '#061178' }} />,
                                 label: 'Тренировки',
+                                style: {
+                                    paddingLeft: '16px',
+                                    paddingRight: '16px',
+                                    marginBottom: '16px',
+                                },
                             },
                             {
                                 key: '3',
-                                icon: <TrophyFilled />,
+                                icon: <TrophyFilled style={{ color: '#061178' }} />,
                                 label: 'Достижения',
+                                style: {
+                                    paddingLeft: '16px',
+                                    paddingRight: '16px',
+                                    marginBottom: '16px',
+                                },
                             },
                             {
                                 key: '4',
-                                icon: <IdcardOutlined />,
+                                icon: <IdcardOutlined style={{ color: '#061178' }} />,
                                 label: 'Профиль',
+                                style: {
+                                    paddingLeft: '16px',
+                                    paddingRight: '16px',
+                                    marginBottom: '16px',
+                                },
                             },
                             {
                                 key: '5',
                                 icon: <img src='/exit.svg' />,
                                 label: 'Выход',
+                                style: {
+                                    paddingLeft: '16px',
+                                    paddingRight: '16px',
+                                },
                             },
                         ]}
                     />
                 </Sider>
-                <Layout className='site-layout'>
-                    <Header className='site-layout-background' style={{ padding: 0 }}>
+                <Layout className='site-layout' style={{ position: 'relative' }}>
+                    <Header className='site-layout-background header'>
                         {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
                             className: 'trigger',
                             onClick: () => setCollapsed(!collapsed),
                         })}
+                        <AppHeaderTitle />
                     </Header>
-                    <Content
-                        className='site-layout-background'
-                        style={{
-                            minHeight: 'calc(100vh - 64px)',
-                        }}
-                    >
-                        Content
+                    <Content className='site-layout-background content-style'>
+                        <AppMainContent />
                     </Content>
+                    <Footer style={{ background: 'inherit', marginBottom: '42px' }}>
+                        <AppFooter />
+                    </Footer>
                 </Layout>
             </Layout>
         </>
