@@ -80,7 +80,7 @@ export const MainPage: React.FC = () => {
                     />
                     {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
                         className: 'trigger-phone',
-                        'data-test-id': 'sider-switch',
+                        'data-test-id': 'sider-switch-mobile',
                         onClick: () => setCollapsed(!collapsed),
                     })}
                 </Sider>
