@@ -18,3 +18,14 @@
 .ant-divider.ant-divider-horizontal {
     margin: 0;
 }
+
+/* media queries  */
+
+@media (max-width: 887px) {
+    .action-card a {
+        padding: 19px 0px;
+    }
+    .action-card p {
+        font-size: 16px;
+    }
+}

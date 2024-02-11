@@ -28,6 +28,7 @@ export const MainPage: React.FC = () => {
                             <img src='/images/logo.png' alt='logo' />
                         </div>
                     </div>
+
                     <Menu
                         mode='inline'
                         items={[
@@ -36,7 +37,6 @@ export const MainPage: React.FC = () => {
                                 icon: <CalendarOutlined style={{ color: '#061178' }} />,
                                 label: 'Календарь',
                                 style: {
-                                    paddingLeft: '16px',
                                     paddingRight: '16px',
                                     marginBottom: '16px',
                                 },
@@ -46,7 +46,6 @@ export const MainPage: React.FC = () => {
                                 icon: <HeartFilled style={{ color: '#061178' }} />,
                                 label: 'Тренировки',
                                 style: {
-                                    paddingLeft: '16px',
                                     paddingRight: '16px',
                                     marginBottom: '16px',
                                 },
@@ -56,7 +55,6 @@ export const MainPage: React.FC = () => {
                                 icon: <TrophyFilled style={{ color: '#061178' }} />,
                                 label: 'Достижения',
                                 style: {
-                                    paddingLeft: '16px',
                                     paddingRight: '16px',
                                     marginBottom: '16px',
                                 },
@@ -66,7 +64,6 @@ export const MainPage: React.FC = () => {
                                 icon: <IdcardOutlined style={{ color: '#061178' }} />,
                                 label: 'Профиль',
                                 style: {
-                                    paddingLeft: '16px',
                                     paddingRight: '16px',
                                     marginBottom: '16px',
                                 },
@@ -76,17 +73,23 @@ export const MainPage: React.FC = () => {
                                 icon: <img src='/exit.svg' />,
                                 label: 'Выход',
                                 style: {
-                                    paddingLeft: '16px',
                                     paddingRight: '16px',
                                 },
                             },
                         ]}
                     />
+                    {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
+                        className: 'trigger-phone',
+                        'data-test-id': 'sider-switch',
+                        onClick: () => setCollapsed(!collapsed),
+                    })}
                 </Sider>
+
                 <Layout className='site-layout' style={{ position: 'relative' }}>
                     <Header className='site-layout-background header'>
                         {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
-                            className: 'trigger',
+                            className: 'trigger-big',
+                            'data-test-id': 'sider-switch',
                             onClick: () => setCollapsed(!collapsed),
                         })}
                         <AppHeaderTitle />

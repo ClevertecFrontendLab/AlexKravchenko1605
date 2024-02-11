@@ -1,7 +1,7 @@
 import './AppHeaderTitle.css';
 
 import { Breadcrumb, Button, Typography } from 'antd';
-import { SettingFilled } from '@ant-design/icons';
+import { SettingFilled, SettingOutlined } from '@ant-design/icons';
 
 const { Title } = Typography;
 
@@ -23,6 +23,10 @@ export const AppHeaderTitle: React.FC = () => {
                     >
                         Настройки
                     </Button>
+                    <Button
+                        className='settings-btn-phone-variant'
+                        icon={<SettingOutlined />}
+                    ></Button>
                 </div>
             </div>
         </div>

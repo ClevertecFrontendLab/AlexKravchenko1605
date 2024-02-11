@@ -19,14 +19,39 @@
 
 .app-possibilities {
     margin-bottom: 24px;
+    margin-right: 24px;
 }
 .app-content-title {
     margin-bottom: 16px;
+    margin-right: 24px;
 }
 .app-card-actions {
     display: flex;
-    flex-wrap: wrap;
     gap: 16px;
     margin-left: 24px;
     margin-bottom: 24px;
+    margin-right: 24px;
+}
+
+/* media queries */
+
+@media (max-width: 490px) {
+    .app-possibilities {
+        margin: 0 16px 24px 16px;
+        padding: 16px;
+    }
+    .app-content-title {
+        margin: 0 16px 16px 16px;
+        padding: 16px;
+    }
+
+    .app-card-actions {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 16px 24px 16px;
+
+        .action-card {
+            width: 100%;
+        }
+    }
 }

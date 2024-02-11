@@ -1,5 +1,6 @@
 .header {
-    height: 168px;
+    min-height: 168px;
+    height: auto;
     padding: 16px 24px;
     background-color: #f0f5ff;
     margin-bottom: 24px;
@@ -21,4 +22,32 @@
 }
 .settings-btn:hover {
     background-color: inherit;
+}
+
+.settings-btn-phone-variant {
+    display: none;
+}
+
+/* media queries */
+
+@media (max-width: 840px) {
+    .header-title h1 {
+        font-size: 24px;
+    }
+    .settings-btn span:nth-child(1) {
+        display: none;
+    }
+}
+
+@media (max-width: 540px) {
+    .header-title h1 {
+        font-size: 20px;
+    }
+    .settings-btn {
+        display: none;
+    }
+    .settings-btn-phone-variant {
+        display: block;
+        border-radius: 50%;
+    }
 }
