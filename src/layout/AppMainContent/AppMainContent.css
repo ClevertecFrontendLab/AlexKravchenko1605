@@ -8,7 +8,8 @@
     background-color: #ffffff;
     padding: 24px;
 
-    p {
+    .app-possibilities-list {
+        list-style: none;
         color: #061178;
         margin-bottom: 0;
         font-family: 'Inter', sans-serif;
