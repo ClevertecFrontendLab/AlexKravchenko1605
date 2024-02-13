@@ -34,7 +34,7 @@ export const MainPage: React.FC = () => {
                         items={[
                             {
                                 key: '1',
-                                icon: <CalendarOutlined style={{ color: '#061178' }} />,
+                                icon: <CalendarOutlined />,
                                 label: 'Календарь',
                                 style: {
                                     paddingRight: '16px',
@@ -43,7 +43,7 @@ export const MainPage: React.FC = () => {
                             },
                             {
                                 key: '2',
-                                icon: <HeartFilled style={{ color: '#061178' }} />,
+                                icon: <HeartFilled />,
                                 label: 'Тренировки',
                                 style: {
                                     paddingRight: '16px',
@@ -52,7 +52,7 @@ export const MainPage: React.FC = () => {
                             },
                             {
                                 key: '3',
-                                icon: <TrophyFilled style={{ color: '#061178' }} />,
+                                icon: <TrophyFilled />,
                                 label: 'Достижения',
                                 style: {
                                     paddingRight: '16px',
@@ -61,7 +61,7 @@ export const MainPage: React.FC = () => {
                             },
                             {
                                 key: '4',
-                                icon: <IdcardOutlined style={{ color: '#061178' }} />,
+                                icon: <IdcardOutlined />,
                                 label: 'Профиль',
                                 style: {
                                     paddingRight: '16px',

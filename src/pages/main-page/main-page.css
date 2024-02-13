@@ -74,7 +74,9 @@
     position: absolute;
     bottom: 0;
 }
-
+.ant-menu-item .anticon {
+    color: #061178;
+}
 .sider-style {
     background-color: #fff;
 }
