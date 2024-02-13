@@ -1,0 +1,30 @@
+.download-to-phone {
+    width: 240px;
+    background-color: #ffffff;
+
+    .text-wrapper {
+        padding: 12px 24px;
+        color: #8c8c8c;
+        p:nth-child(1) {
+            color: #2f54eb;
+            margin-bottom: 8px;
+        }
+    }
+    .os-wrapper {
+        display: flex;
+        height: 56px;
+
+        a {
+            width: 120px;
+            color: #262626;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 0px;
+        }
+    }
+}
+
+p {
+    margin-bottom: 0;
+}
